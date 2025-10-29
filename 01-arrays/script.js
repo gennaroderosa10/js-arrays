@@ -19,18 +19,19 @@ teachers[4] = "Patrick"
 console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = teachers[6];
+const lastTeacher = teachers.pop();
 console.log(lastTeacher);
-teachers.splice(6.6);
 console.log(teachers);
+
+// console.log(lastTeacher);
+// teachers.splice(6.6);
+
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers[0];
+const firstTeacher = teachers.shift();
 console.log(firstTeacher);
-teachers.shift();
 console.log(teachers);
 
-// si può usare anche teachers.pop()
 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
@@ -46,10 +47,11 @@ const lewisIndex = teachers.indexOf("Lewis");
 console.log(teachers[lewisIndex]);
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
-if (teachers.length === 0) {
-  console.log("empty")
-} else {
-  console.log("full")
-}
+const isTeachersEmpty = teachers.length === 0;
+// if (isTeachersEmpty) {
+//   console.log("empty")
+// } else {
+//   console.log("full")
+// }
+console.log(isTeachersEmpty)
 
